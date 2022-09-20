@@ -13,13 +13,7 @@ const MenuNav = createBottomTabNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <MenuNav.Navigator
-        screenOptions={{
-          tabBarIcon: {
-            backgroundColor: "red",
-          },
-        }}
-      >
+      <MenuNav.Navigator>
         <MenuNav.Screen 
           name="Java Script" 
           component={ TelaJavaScript } 
@@ -38,3 +32,4 @@ export default function App() {
   );
 }
 //https://icons.expo.fyi/Fontisto/home
+//git remote set-url origin ['https://github.com/YsraelBaruk/pam13-09-2022.git']
