@@ -2,7 +2,6 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { AntDesign } from '@expo/vector-icons';
-import { Fontisto } from '@expo/vector-icons';
 
 import TelaJavaScript from "./componentes/TelaJavaScript";
 import TelaNode from "./componentes/TelaNode";
