@@ -3,3 +3,9 @@ tabBarIcon: {
 backgroundColor: "red",
 },
 }}
+
+//https://icons.expo.fyi/Fontisto/home
+//git remote set-url origin ['https://github.com/YsraelBaruk/pam13-09-2022.git']
+
+
+plugins: ['react-native-reanimated/plugin'],
