@@ -1,35 +1,21 @@
-//import React from "react";
+import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { AntDesign } from '@expo/vector-icons';
-import { Fontisto } from '@expo/vector-icons';
+import { createDrawerNavigator } from "@react-navigation/drawer";
 
 import TelaJavaScript from "./componentes/TelaJavaScript";
 import TelaNode from "./componentes/TelaNode";
 import TelaReact from "./componentes/TelaReact";
 
-const MenuNav = createBottomTabNavigator();
+const MenuNav = createDrawerNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
       <MenuNav.Navigator>
-        <MenuNav.Screen 
-          name="Java Script" 
-          component={ TelaJavaScript } 
-          options={{
-              tabBarIcon: () => (
-                <AntDesign name="home" size={24} color="black" />
-              ),
-              
-          }}
-        />
-        <MenuNav.Screen name="Node" component={ TelaNode } options={{tabBarIcon: () => (<AntDesign name="chrome" size={24} color="red"  />),}}
-      />
+        <MenuNav.Screen name="Java Script" component={ TelaJavaScript }/>
+        <MenuNav.Screen name="Node" component={ TelaNode }/>
         <MenuNav.Screen name="React" component={ TelaReact } />
       </MenuNav.Navigator>
     </NavigationContainer>
   );
 }
-//https://icons.expo.fyi/Fontisto/home
-//git remote set-url origin ['https://github.com/YsraelBaruk/pam13-09-2022.git']
